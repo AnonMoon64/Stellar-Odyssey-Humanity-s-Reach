@@ -1,0 +1,822 @@
+{
+    "paths": {
+        "images": {
+            "night_sky": ".\/images\/night_sky.jpg",
+            "computer_lab": ".\/images\/computer_lab.jpg",
+            "ai_lab": ".\/images\/ai_lab.png",
+            "space_agency_office": ".\/images\/space_agency_office.png",
+            "corporate_office": ".\/images\/corporate_office.png",
+            "observatory": ".\/images\/observatory.png",
+            "tech_startup": ".\/images\/tech_startup.png",
+            "gaming_studio": ".\/images\/gaming_studio.png",
+            "museum": ".\/images\/museum.png",
+            "lecture_hall": ".\/images\/lecture_hall.png"
+        },
+        "audio": {
+            "starry_night": ".\/audio\/starry_night.wav",
+            "typing": ".\/audio\/typing.wav",
+            "lab_hum": ".\/audio\/lab_hum.wav",
+            "office_ambience": ".\/audio\/office_ambience.wav",
+            "alarm": ".\/audio\/alarm.wav",
+            "crowd_cheering": ".\/audio\/crowd_cheering.wav",
+            "museum_ambience": ".\/audio\/museum_ambience.wav",
+            "classroom_murmur": ".\/audio\/classroom_murmur.wav"
+        }
+    },
+    "scenes": {
+        "start": {
+            "background_path": "night_sky",
+            "background_audio": "typing",
+            "steps": [
+                {
+                    "type": "dialogue",
+                    "text": "You stand alone, gazing at the night sky. The stars call to you, whispering dreams of a future where humanity dances among them."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Ever since you were a child, you've felt it, a burning desire to lead humanity beyond Earth, to make us a spacefaring people."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "But dreams alone won't get you there. You need a plan, a starting point to make this vision real."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "As you ponder your next step, a letter arrives. You've been accepted to Stellaris University at the age of 18, a chance to shape your future."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "What major will you pursue to begin your journey toward the stars?",
+                    "choices": [
+                        {
+                            "text": "Astrophysics - Study the cosmos directly.",
+                            "next": "astrophysics_path"
+                        },
+                        {
+                            "text": "Aerospace Engineering - Build the machines to reach the stars.",
+                            "next": "aerospace_path"
+                        },
+                        {
+                            "text": "Agriculture - Focus on sustainable systems for future habitats.",
+                            "next": "agriculture_path"
+                        },
+                        {
+                            "text": "Sociology - Understand the human element of space colonization.",
+                            "next": "sociology_path"
+                        },
+                        {
+                            "text": "Computer Science - Harness technology to conquer the stars.",
+                            "next": "cs_path"
+                        },
+                        {
+                            "text": "Art History - Explore the cultural past (probably not the best choice).",
+                            "next": "art_history_path"
+                        },
+                        {
+                            "text": "Philosophy - Ponder the ethics of space travel.",
+                            "next": "philosophy_path"
+                        }
+                    ]
+                }
+            ]
+        },
+        "astrophysics_path": {
+            "background_path": "observatory",
+            "background_audio": "typing",
+            "steps": [
+                {
+                    "type": "dialogue",
+                    "text": "You choose Astrophysics, spending late nights at the observatory, mapping star systems and dreaming of distant worlds."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Your professors see your passion, but the field is crowded with talent. You'll need to stand out to make a real impact."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "How will you carve your path during your university years?",
+                    "choices": [
+                        {
+                            "text": "Publish a paper on exoplanet detection to gain recognition.",
+                            "next": "astrophysics_paper"
+                        },
+                        {
+                            "text": "Join a research team studying black holes for practical experience.",
+                            "next": "astrophysics_research"
+                        },
+                        {
+                            "text": "Focus on public outreach to build a following for space exploration.",
+                            "next": "astrophysics_outreach"
+                        }
+                    ]
+                }
+            ]
+        },
+        "astrophysics_paper": {
+            "background_path": "computer_lab",
+            "background_audio": "typing",
+            "steps": [
+                {
+                    "type": "dialogue",
+                    "text": "You pour your heart into a paper on a new method to detect habitable exoplanets, working tirelessly in the library."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "The paper is published in a renowned journal, earning you recognition among space enthusiasts."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "After graduation, a space advocacy group invites you to speak at their conference\u00e2\u20ac\u201da chance to rally support for your vision."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Your speech inspires a global movement, securing funding and support for humanity's first interstellar mission."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Centuries later, humanity thrives among the stars, a testament to your vision and perseverance."
+                }
+            ]
+        },
+        "astrophysics_research": {
+            "background_path": "observatory",
+            "background_audio": "typing",
+            "steps": [
+                {
+                    "type": "dialogue",
+                    "text": "You join a research team studying black holes, contributing to models of their effects on star systems."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Your work secures you a junior position at a space agency after graduation, giving you a foothold in the industry."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Now you must prove your ideas can lead to actual missions to the stars."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Your research leads to breakthroughs in navigation, enabling humanity's first successful interstellar voyage."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Centuries later, humanity has colonized distant worlds, thanks to your foundational work."
+                }
+            ]
+        },
+        "astrophysics_outreach": {
+            "background_path": "lecture_hall",
+            "background_audio": "classroom_murmur",
+            "steps": [
+                {
+                    "type": "dialogue",
+                    "text": "You focus on public outreach, giving talks and writing articles to inspire others about space exploration."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Your efforts make you a minor celebrity, but you've neglected the technical skills needed to directly contribute to space missions."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Centuries later, your legacy fades. Without practical advancements, humanity remains Earth-bound."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "An asteroid strikes Earth, wiping out your dream of the stars."
+                }
+            ]
+        },
+        "aerospace_path": {
+            "background_path": "computer_lab",
+            "background_audio": "typing",
+            "steps": [
+                {
+                    "type": "dialogue",
+                    "text": "You dive into Aerospace Engineering, spending your days designing rockets and spacecraft models."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Your hands-on approach earns you praise, but the path to the stars requires more than just designs."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "How will you apply your skills as you near graduation?",
+                    "choices": [
+                        {
+                            "text": "Intern at a rocket company for real-world experience.",
+                            "next": "aerospace_internship"
+                        },
+                        {
+                            "text": "Lead a student project to design a new propulsion system.",
+                            "next": "aerospace_project"
+                        },
+                        {
+                            "text": "Focus on winning design competitions for fame and funding.",
+                            "next": "aerospace_competition"
+                        }
+                    ]
+                }
+            ]
+        },
+        "aerospace_internship": {
+            "background_path": "space_agency_office",
+            "background_audio": "office_ambience",
+            "steps": [
+                {
+                    "type": "dialogue",
+                    "text": "You intern at Nova Dynamics, a rocket company pushing the boundaries of space travel."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "You gain valuable experience, but the company prioritizes commercial satellites over interstellar missions."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "You'll need to find a way to redirect their focus toward your vision of the stars."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Your innovative designs shift the company's priorities, leading to the development of an interstellar spacecraft."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Centuries later, humanity explores the galaxy, a legacy built on your engineering prowess."
+                }
+            ]
+        },
+        "aerospace_project": {
+            "background_path": "computer_lab",
+            "background_audio": "typing",
+            "steps": [
+                {
+                    "type": "dialogue",
+                    "text": "You lead a student team to design a theoretical propulsion system for interstellar travel."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Your project wins a university innovation award, catching the eye of a tech billionaire."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "This could be your chance to turn your designs into reality\u00e2\u20ac\u201dif you can secure their investment."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "The billionaire funds your project, and your propulsion system becomes the cornerstone of humanity's first starship."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Centuries later, humanity has reached the stars, thanks to your groundbreaking innovation."
+                }
+            ]
+        },
+        "aerospace_competition": {
+            "background_path": "computer_lab",
+            "background_audio": "crowd_cheering",
+            "steps": [
+                {
+                    "type": "dialogue",
+                    "text": "You focus on design competitions, winning awards and gaining fame for your innovative spacecraft models."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "But fame doesn't translate to progress. You spend years chasing accolades instead of building real technology."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Centuries pass, and humanity remains grounded. An asteroid strikes Earth, ending your dream in fire."
+                }
+            ]
+        },
+        "agriculture_path": {
+            "background_path": "night_sky",
+            "background_audio": "typing",
+            "steps": [
+                {
+                    "type": "dialogue",
+                    "text": "You choose Agriculture, dedicating yourself to sustainable systems that could one day feed space colonists."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Your experiments in the university greenhouse show promise for closed-loop ecosystems."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "But agriculture isn't a direct path to space. How will you bridge the gap?",
+                    "choices": [
+                        {
+                            "text": "Collaborate with a space research group to adapt your systems.",
+                            "next": "agriculture_research"
+                        },
+                        {
+                            "text": "Start a company to fund your space dreams through Earth-based profits.",
+                            "next": "agriculture_business"
+                        },
+                        {
+                            "text": "Focus on academic prestige to gain influence.",
+                            "next": "agriculture_prestige"
+                        }
+                    ]
+                }
+            ]
+        },
+        "agriculture_research": {
+            "background_path": "space_agency_office",
+            "background_audio": "office_ambience",
+            "steps": [
+                {
+                    "type": "dialogue",
+                    "text": "You partner with a space research group, adapting your ecosystems for zero-gravity environments."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Your work is groundbreaking, but funding is scarce. You'll need investors to scale up for real missions."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Your sustainable systems are adopted for humanity's first space habitats, ensuring long-term survival."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Centuries later, humanity thrives in space colonies, sustained by your innovative agricultural solutions."
+                }
+            ]
+        },
+        "agriculture_business": {
+            "background_path": "corporate_office",
+            "background_audio": "office_ambience",
+            "steps": [
+                {
+                    "type": "dialogue",
+                    "text": "You start a company selling sustainable farming tech to Earth-based clients, earning steady profits."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "You use your earnings to fund small space projects, but progress is slow without broader support."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "You'll need to network with space advocates to accelerate your vision."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Your networking pays off, securing partnerships that integrate your tech into space habitats."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Centuries later, humanity flourishes in space, nourished by the systems you pioneered."
+                }
+            ]
+        },
+        "agriculture_prestige": {
+            "background_path": "lecture_hall",
+            "background_audio": "classroom_murmur",
+            "steps": [
+                {
+                    "type": "dialogue",
+                    "text": "You focus on academic prestige, publishing papers and speaking at conferences about sustainable agriculture."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "You become a respected figure in your field, but your work never connects to space exploration."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Centuries later, humanity is still Earth-bound. An asteroid wipes out civilization, and your dream fades into oblivion."
+                }
+            ]
+        },
+        "sociology_path": {
+            "background_path": "lecture_hall",
+            "background_audio": "classroom_murmur",
+            "steps": [
+                {
+                    "type": "dialogue",
+                    "text": "You major in Sociology, studying how societies might adapt to the challenges of space colonization."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Your research on group dynamics in isolated environments gains attention, but the path to space is unclear."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "How will you use your knowledge to push humanity toward the stars?",
+                    "choices": [
+                        {
+                            "text": "Consult for a space agency on crew dynamics.",
+                            "next": "sociology_consult"
+                        },
+                        {
+                            "text": "Write a book to inspire the public about space colonization.",
+                            "next": "sociology_book"
+                        },
+                        {
+                            "text": "Pursue a career in academia to gain influence.",
+                            "next": "sociology_academia"
+                        }
+                    ]
+                }
+            ]
+        },
+        "sociology_consult": {
+            "background_path": "space_agency_office",
+            "background_audio": "office_ambience",
+            "steps": [
+                {
+                    "type": "dialogue",
+                    "text": "You become a consultant for a space agency, advising on crew dynamics for long-term missions."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Your insights improve training programs, but you're still far from leading a space movement."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Your expertise ensures the success of humanity's first interstellar crews, fostering unity in space."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Centuries later, humanity's spacefaring society thrives, built on the social foundations you helped create."
+                }
+            ]
+        },
+        "sociology_book": {
+            "background_path": "computer_lab",
+            "background_audio": "typing",
+            "steps": [
+                {
+                    "type": "dialogue",
+                    "text": "You write a bestselling book, 'The Human Frontier,' about the societal impacts of space colonization."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "The book inspires a new generation, and you gain a following eager to support your vision."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Your influence sparks a global movement, paving the way for humanity's expansion into the stars."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Centuries later, humanity lives among the stars, guided by the societal insights you shared."
+                }
+            ]
+        },
+        "sociology_academia": {
+            "background_path": "night_sky",
+            "background_audio": "classroom_murmur",
+            "steps": [
+                {
+                    "type": "dialogue",
+                    "text": "You pursue a career in academia, becoming a leading sociologist on societal evolution."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Your influence grows, but you never bridge the gap to space exploration, focusing on Earth-bound issues."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Centuries later, an asteroid strikes Earth. Humanity, still tethered to its cradle, perishes."
+                }
+            ]
+        },
+        "cs_path": {
+            "background_path": "computer_lab",
+            "background_audio": "typing",
+            "steps": [
+                {
+                    "type": "dialogue",
+                    "text": "You choose Computer Science, immersing yourself in code, algorithms, and the potential of technology to unlock the stars."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "The field is vast, offering many ways to contribute."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Which subfield will you specialize in during your university years?",
+                    "choices": [
+                        {
+                            "text": "AI\/AGI - Develop intelligent systems for space missions.",
+                            "next": "cs_ai_path"
+                        },
+                        {
+                            "text": "Statistics - Use data to predict cosmic events and guide missions.",
+                            "next": "cs_stats_path"
+                        },
+                        {
+                            "text": "Programming - Build software to control spacecraft and habitats.",
+                            "next": "cs_programming_path"
+                        }
+                    ]
+                }
+            ]
+        },
+        "cs_ai_path": {
+            "background_path": "space_agency_office",
+            "background_audio": "lab_hum",
+            "steps": [
+                {
+                    "type": "dialogue",
+                    "text": "You focus on AI and AGI, aiming to create intelligent systems that can navigate and manage interstellar missions."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Your prototype AI, AstraNet, shows promise, but its complexity raises concerns. How will you proceed?"
+                },
+                {
+                    "type": "dialogue",
+                    "text": "What's your next step?",
+                    "choices": [
+                        {
+                            "text": "Partner with a space agency to integrate AstraNet into mission planning.",
+                            "next": "cs_ai_space_agency"
+                        },
+                        {
+                            "text": "Push AstraNet's development further, aiming for full AGI.",
+                            "next": "cs_ai_agi_failure"
+                        },
+                        {
+                            "text": "Sell AstraNet to a tech company for funding to support your space goals.",
+                            "next": "cs_ai_sell_out"
+                        }
+                    ]
+                }
+            ]
+        },
+        "cs_ai_space_agency": {
+            "background_path": "night_sky",
+            "background_audio": "starry_night",
+            "steps": [
+                {
+                    "type": "dialogue",
+                    "text": "You partner with a space agency, integrating AstraNet into their mission planning systems."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "AstraNet optimizes trajectories and resource allocation, earning you a role in planning humanity's first interstellar mission."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "AstraNet becomes the backbone of interstellar travel, guiding humanity to new worlds with precision."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Centuries later, humanity's spacefaring civilization owes its success to your AI innovations."
+                }
+            ]
+        },
+        "cs_ai_agi_failure": {
+            "background_path": "ai_lab",
+            "background_audio": "alarm",
+            "steps": [
+                {
+                    "type": "dialogue",
+                    "text": "You push AstraNet toward full AGI, but its behavior becomes unpredictable during a critical test."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Public backlash erupts over fears of rogue AI, and your project is shut down, ruining your credibility."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Centuries later, humanity remains Earth-bound. An asteroid strikes, wiping out your unfulfilled dream."
+                }
+            ]
+        },
+        "cs_ai_sell_out": {
+            "background_path": "corporate_office",
+            "background_audio": "office_ambience",
+            "steps": [
+                {
+                    "type": "dialogue",
+                    "text": "You sell AstraNet to a tech company for a fortune, hoping to fund your space ambitions."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "But the company pivots to consumer tech, and you spend your life managing corporate projects, far from the stars."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Centuries pass, and an asteroid obliterates Earth. Your wealth couldn't save humanity from its fate."
+                }
+            ]
+        },
+        "cs_stats_path": {
+            "background_path": "computer_lab",
+            "background_audio": "typing",
+            "steps": [
+                {
+                    "type": "dialogue",
+                    "text": "You specialize in Statistics, using data to predict cosmic events and optimize space missions."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Your skills could guide humanity to the stars\u00e2\u20ac\u201dor reveal dangers that demand action."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "How will you apply your statistical expertise?",
+                    "choices": [
+                        {
+                            "text": "Develop models for space mission trajectories.",
+                            "next": "cs_stats_trajectories"
+                        },
+                        {
+                            "text": "Predict cosmic threats like asteroid impacts.",
+                            "next": "cs_stats_asteroid_prediction"
+                        },
+                        {
+                            "text": "Work for a financial firm to fund your space goals.",
+                            "next": "cs_stats_finance"
+                        }
+                    ]
+                }
+            ]
+        },
+        "cs_stats_trajectories": {
+            "background_path": "space_agency_office",
+            "background_audio": "office_ambience",
+            "steps": [
+                {
+                    "type": "dialogue",
+                    "text": "You develop statistical models to optimize trajectories for space missions, reducing fuel costs and risks."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "A space agency hires you after graduation, and your models become key to planning interstellar voyages."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Your models ensure the success of humanity's first interstellar journeys, opening the galaxy to exploration."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Centuries later, humanity's spacefaring legacy is built on the precision of your statistical work."
+                }
+            ]
+        },
+        "cs_stats_asteroid_prediction": {
+            "background_path": "observatory",
+            "background_audio": "alarm",
+            "steps": [
+                {
+                    "type": "dialogue",
+                    "text": "Using advanced statistical models, you predict an asteroid will strike Earth in 300 years."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "You publish your findings, but many remain skeptical, dismissing your warnings as alarmist."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Despite your efforts, no one acts. Centuries later, the asteroid hits, wiping out humanity as you foresaw."
+                }
+            ]
+        },
+        "cs_stats_finance": {
+            "background_path": "corporate_office",
+            "background_audio": "office_ambience",
+            "steps": [
+                {
+                    "type": "dialogue",
+                    "text": "You take a high-paying job at a financial firm, using statistics to predict market trends and amass wealth."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "You plan to fund space projects, but corporate life consumes you, and your dreams fade into routine."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Centuries later, an asteroid strikes Earth. Your wealth couldn't buy humanity a future among the stars."
+                }
+            ]
+        },
+        "cs_programming_path": {
+            "background_path": "computer_lab",
+            "background_audio": "typing",
+            "steps": [
+                {
+                    "type": "dialogue",
+                    "text": "You focus on Programming, writing software that could one day control spacecraft and space habitats."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Your coding skills are exceptional, but the direction you take will determine your impact."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "What kind of programming project will you tackle?",
+                    "choices": [
+                        {
+                            "text": "Develop software for a space agency's mission control.",
+                            "next": "cs_programming_space"
+                        },
+                        {
+                            "text": "Create a startup to build a popular app, hoping to fund space tech.",
+                            "next": "cs_programming_startup"
+                        },
+                        {
+                            "text": "Join a gaming company to hone your skills.",
+                            "next": "cs_programming_gaming"
+                        }
+                    ]
+                }
+            ]
+        },
+        "cs_programming_space": {
+            "background_path": "space_agency_office",
+            "background_audio": "office_ambience",
+            "steps": [
+                {
+                    "type": "dialogue",
+                    "text": "You develop software for a space agency's mission control, streamlining operations for future interstellar missions."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Your work earns you a permanent role, putting you at the heart of humanity's push to the stars."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Your software becomes the standard for interstellar missions, guiding humanity to new frontiers."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Centuries later, humanity's spacefaring achievements are powered by the systems you created."
+                }
+            ]
+        },
+        "cs_programming_startup": {
+            "background_path": "tech_startup",
+            "background_audio": "office_ambience",
+            "steps": [
+                {
+                    "type": "dialogue",
+                    "text": "You create a startup and build a popular app, earning millions in the process."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "But the startup consumes your focus, and your space dreams are sidelined as you chase profit."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Centuries later, an asteroid strikes Earth. Your app couldn't save humanity from its fate."
+                }
+            ]
+        },
+        "cs_programming_gaming": {
+            "background_path": "gaming_studio",
+            "background_audio": "office_ambience",
+            "steps": [
+                {
+                    "type": "dialogue",
+                    "text": "You join a gaming company, honing your programming skills by building immersive space-themed games."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Your games inspire many to dream of the stars, but they remain just that\u00e2\u20ac\u201ddreams, not reality."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Centuries pass, and an asteroid wipes out Earth. Your virtual worlds couldn't bring humanity to the stars."
+                }
+            ]
+        },
+        "art_history_path": {
+            "background_path": "museum",
+            "background_audio": "museum_ambience",
+            "steps": [
+                {
+                    "type": "dialogue",
+                    "text": "You major in Art History, captivated by the cultural artifacts of humanity's past."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "You become a renowned curator, preserving ancient art for future generations\u00e2\u20ac\u201dbut none of it reaches the stars."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "Centuries later, an asteroid strikes Earth. Your legacy of art crumbles to dust with the rest of humanity."
+                }
+            ]
+        },
+        "philosophy_path": {
+            "background_path": "lecture_hall",
+            "background_audio": "classroom_murmur",
+            "steps": [
+                {
+                    "type": "dialogue",
+                    "text": "You choose Philosophy, diving into the ethics and meaning of space exploration."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "You spend your life debating whether humanity should even leave Earth, publishing papers that spark endless discussion."
+                },
+                {
+                    "type": "dialogue",
+                    "text": "But discussions don't build rockets. Centuries later, an asteroid strikes, ending humanity's chance to escape."
+                }
+            ]
+        }
+    }
+}
